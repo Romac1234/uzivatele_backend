@@ -17,7 +17,9 @@
   "homepage": "https://github.com/Romac1234/uzivatele_backend#readme",
   "description": "",
   "dependencies": {
+    "@netlify/functions": "^2.8.2",
     "cors": "^2.8.5",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "serverless-http": "^3.2.0"
   }
 }
