@@ -22,7 +22,9 @@ router.get("/", (req, res) => {
   res.json("hlavni strana");
 });
 
-const userRouter = require("./routes/users"); // konstanta a odkud to importuju (ze server)
+//const userRouter = require("./routes/users"); // konstanta a odkud to importuju (ze server)
+import userRouter from "./routes/users";
+
 router.use("/users", userRouter); // app or router?? hromadna adresa, konstanta z minuleho radku
 
 // app.listen(3001, () => {
