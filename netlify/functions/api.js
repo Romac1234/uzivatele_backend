@@ -1,11 +1,12 @@
 import express, { Router } from "express";
 import serverless from "serverless-http";
+import cors from "cors";
+
+const app = express();
 const router = express.Router();
 
 // const cors = require("cors");
 // app.use(cors());
-
-import cors from "cors";
 
 app.use(
   cors({
@@ -15,7 +16,6 @@ app.use(
   })
 );
 
-const app = express();
 app.use(express.json());
 
 router.get("/", (req, res) => {
